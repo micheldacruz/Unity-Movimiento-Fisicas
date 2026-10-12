@@ -57,3 +57,11 @@ La esfera cae por efecto de la gravedad al ser dinámica, pero al tener `Is Trig
 
 <img width="748" height="360" alt="Ejercicio1" src="https://github.com/user-attachments/assets/8dfefcb5-3754-44bb-8414-a38ed665a8cc" />
 
+## Ejercicio 2
+
+* **Objetivo:** Detección de colisiones físicas e interacción entre objetos dinámicos.
+* **Eventos físicos:** Uso del método `OnCollisionEnter` para detectar el momento exacto del impacto.
+* **Interacción visual y consola:** Modificación de color accediendo al `Renderer` e impresión del nombre del objeto impactado (`colision.gameObject.name`).
+* **Filtrado por etiquetas:** Implementación de `CompareTag("Suelo")` para ignorar la superficie base y registrar únicamente los choques entre las propias figuras.
+
+<img width="748" height="360" alt="Ejercicio2" src="https://github.com/user-attachments/assets/368086c2-616a-4cce-b68f-5865ffc33bbc" />
