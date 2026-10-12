@@ -45,3 +45,15 @@ La esfera permanece flotando en el aire al ser cinemática (`Is Kinematic` activ
 
 La esfera cae por efecto de la gravedad al ser dinámica, pero al tener `Is Trigger` activado atraviesa por completo la geometría del cubo y del plano sin colisionar, cayendo hacia el infinito.
 <img width="750" height="358" alt="Situacion9" src="https://github.com/user-attachments/assets/91e50387-8a5e-4c07-9501-848b43815191" />
+
+## Ejercicios Físicas 3D - Scripts
+
+## Ejercicio 1
+
+* **Objetivo:** Movimiento físico de personaje con control total (sin inercia).
+* **Desplazamiento:** Uso de `Rigidbody.MovePosition()` en `FixedUpdate` para mover el objeto de forma exacta.
+* **Control diagonal:** Aplicación de `.normalized` en el vector de entrada para mantener la misma velocidad en las diagonales.
+* **Sincronización:** Multiplicación por `Time.fixedDeltaTime` para un movimiento constante independiente de los FPS.
+
+<img width="748" height="360" alt="Ejercicio1" src="https://github.com/user-attachments/assets/8dfefcb5-3754-44bb-8414-a38ed665a8cc" />
+
