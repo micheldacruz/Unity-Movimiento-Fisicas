@@ -74,3 +74,13 @@ La esfera cae por efecto de la gravedad al ser dinámica, pero al tener `Is Trig
 * **Materiales de desarrollo:** Aplicación de materiales semi-transparentes (reduciendo el valor Alpha) en las zonas Trigger para visualizar sus límites sin tapar al personaje durante las pruebas.
 
 <img width="748" height="360" alt="Ejercicio3" src="https://github.com/user-attachments/assets/f1869565-4006-4882-a4eb-c8f19af52aad" />
+
+## Ejercicio 4
+
+* **Objetivo:** Optimización del motor físico y control selectivo de interacciones mediante el uso de Capas (Layers).
+* **Clasificación:** Creación y asignación de las capas personalizadas `Jugador`, `Enemigos` y `Recolectables` para categorizar los GameObjects de la escena.
+* **Layer Collision Matrix:** Configuración de la matriz de colisiones (`Edit > Project Settings > Physics`) para desactivar interacciones físicas innecesarias (Enemigo vs Enemigo, Enemigo vs Recolectable).
+* **Configuración de Recolectables:** Activación de la propiedad `Is Trigger` en los colliders de los objetos recolectables para que sean detectados por el jugador mediante eventos (`OnTriggerEnter`) sin generar resistencia ni cálculos de choque sólido.
+
+<img width="750" height="358" alt="Ejercicio4 1" src="https://github.com/user-attachments/assets/3114cf07-c30e-41cf-ad5f-9974914950b8" />
+
