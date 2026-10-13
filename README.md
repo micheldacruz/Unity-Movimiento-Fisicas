@@ -92,3 +92,12 @@ La esfera cae por efecto de la gravedad al ser dinámica, pero al tener `Is Trig
 * **Aplicación de fuerza:** Implementación de `Rigidbody.AddForce()` con `ForceMode.Impulse` al detectar la tecla X (`Input.GetKeyDown`) para lanzar los objetos y visualizar sus diferencias de desplazamiento y rebote.
 
 <img width="748" height="360" alt="Ejercicio5" src="https://github.com/user-attachments/assets/51f8a114-0372-4793-868c-47d660f16199" />
+
+## Ejercicio 6
+
+* **Objetivo:** Desplazamiento cinemático de objetos y detección de proximidad sin utilizar el motor de físicas (`Rigidbody`).
+* **Movimiento y Rotación:** Implementación de `transform.LookAt()` para encarar al objetivo final (cilindro) y `transform.Translate()` para el avance continuo, independizando el movimiento de los cálculos físicos.
+* **Detección de alcance (sin físicas):** Al carecer de componentes `Rigidbody`, la detección de impacto con el obstáculo (cubo) se resolvió matemáticamente calculando la magnitud del vector entre ambos objetos con `Vector3.Distance()`.
+* **Modificación visual:** Acceso al componente `Renderer` del cubo para alterar su `material.color` en tiempo de ejecución al momento de cumplirse la condición de proximidad.
+
+<img width="748" height="360" alt="Ejercicio6" src="https://github.com/user-attachments/assets/7811dd27-d440-4db4-a115-84a68b4d7ecf" />
