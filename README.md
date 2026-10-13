@@ -65,3 +65,12 @@ La esfera cae por efecto de la gravedad al ser dinámica, pero al tener `Is Trig
 * **Filtrado por etiquetas:** Implementación de `CompareTag("Suelo")` para ignorar la superficie base y registrar únicamente los choques entre las propias figuras.
 
 <img width="748" height="360" alt="Ejercicio2" src="https://github.com/user-attachments/assets/368086c2-616a-4cce-b68f-5865ffc33bbc" />
+
+## Ejercicio 3
+
+* **Objetivo:** Creación de áreas de interacción (Triggers) para aplicar efectos lógicos y visuales al personaje sin detener su movimiento.
+* **Zonas permeables:** Activación de la casilla `Is Trigger` en los Colliders para que los objetos puedan ser atravesados sin generar colisiones físicas.
+* **Eventos de volumen:** Uso de `OnTriggerEnter` para aplicar efectos inmediatos (cambiar el color, sumar daño) y `OnTriggerExit` para revertirlos al salir.
+* **Materiales de desarrollo:** Aplicación de materiales semi-transparentes (reduciendo el valor Alpha) en las zonas Trigger para visualizar sus límites sin tapar al personaje durante las pruebas.
+
+<img width="748" height="360" alt="Ejercicio3" src="https://github.com/user-attachments/assets/f1869565-4006-4882-a4eb-c8f19af52aad" />
