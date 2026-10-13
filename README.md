@@ -84,3 +84,11 @@ La esfera cae por efecto de la gravedad al ser dinámica, pero al tener `Is Trig
 
 <img width="750" height="358" alt="Ejercicio4 1" src="https://github.com/user-attachments/assets/3114cf07-c30e-41cf-ad5f-9974914950b8" />
 
+## Ejercicio 5
+
+* **Objetivo:** Experimentación con las propiedades de los materiales físicos (`Physic Material`) y aplicación de fuerzas por impulso.
+* **Propiedades físicas:** Configuración de `Dynamic/Static Friction` (0 para hielo, 1 para lija) y `Bounciness` (1 para rebote alto) para alterar el comportamiento de los objetos.
+* **Modos de combinación:** Uso de `Friction Combine` (Minimum/Maximum) para asegurar que las propiedades del material predominen sobre las del suelo.
+* **Aplicación de fuerza:** Implementación de `Rigidbody.AddForce()` con `ForceMode.Impulse` al detectar la tecla X (`Input.GetKeyDown`) para lanzar los objetos y visualizar sus diferencias de desplazamiento y rebote.
+
+<img width="748" height="360" alt="Ejercicio5" src="https://github.com/user-attachments/assets/51f8a114-0372-4793-868c-47d660f16199" />
